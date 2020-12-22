@@ -1,0 +1,56 @@
+.project-title {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+
+  font-size: 16px;
+  color: #fff;
+}
+
+.credits {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  font-size: 15px;
+  z-index: 20;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.credits * + * {
+  margin-left: 15px;
+}
+
+.credits a {
+  padding: 8px 10px;
+  color: rgba(14, 231, 61, 0.7);
+  border: 2px solid rgba(14, 231, 61, 0.7);
+  text-decoration: none;
+}
+
+.credits a:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+@media screen and (max-width: 1040px) {
+  .project-title {
+    display: none;
+  }
+
+  .credits {
+    width: 100%;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    padding: 30px 0;
+    background: #532323;
+    text-align: center;
+  }
+
+  .credits a {
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}

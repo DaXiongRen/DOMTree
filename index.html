@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+		<meta charset="utf-8">
+		<meta name="description" content="程序员的圣诞树" />
+		<meta name="author" content="大熊人" />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+        <title>圣诞树 - 大熊人</title>
+
+		<link href="css/ui.css" rel="stylesheet" media="screen" />
+		<link href="css/domtree.css" rel="stylesheet" media="screen" />
+		<link href="css/audiobtn.css" rel="stylesheet" media="screen" />
+		<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+		
+		<!-- 音乐 -->
+		<script type="text/javascript" src="js/audiobtn.js" ></script>
+		<div class="video_exist play_yinfu" id="audio_btn" style="display: block;z-index:999999;">
+			<div id="yinfu" class="rotate"></div>
+			<audio preload="auto" autoplay="autoplay" id="audio" src="music/24_7.mp3" loop="loop"></audio>
+		</div>
+    </head>
+    <body>
+
+		<!-- 圣诞树 -->
+    	<div class="tree"></div>
+		<script src="js/domtree.js"></script>
+
+		<!-- UI和第三方脚本 -->
+		<p class="project-title">送给XXX</p>
+
+		<div class="credits">
+			<a href="https://github.com/DaXiongRen/DOMTree">GitHub</a>
+			<a href="https://codechina.csdn.net/DaXiongRen/domtree" target="_blank">CodeChina</a>
+			<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=QnF3dHd1dHdxd3UCMzNsIS0v" style="text-decoration:none;">给我写信</a>
+		</div>
+
+		<script>
+			var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+			(function(d, t) {
+			var g = d.createElement(t),
+			    s = d.getElementsByTagName(t)[0];
+			g.async = true;
+			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g, s);
+			})(document, 'script');
+		</script>
+
+    </body>
+</html>

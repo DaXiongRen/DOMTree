@@ -1,0 +1,176 @@
+/*********************************************
+ * RESET
+ *********************************************/
+
+html {
+  color: rgb(0, 0, 0);
+  background: #222222;
+}
+a {
+  cursor: pointer;
+}
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+/* h1,h2,h3,h4,h5,h6{font-size:100%;} */
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  outline-style: none;
+  outline-width: 0pt;
+}
+legend {
+  color: #000;
+}
+a:focus,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -moz-outline-style: none;
+  border: 0px;
+}
+/*input[type="Submit"]{cursor:pointer;}*/
+strong {
+  font-weight: bold;
+}
+
+/*********************************************
+ * GLOBAL
+ *********************************************/
+
+body,
+html {
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 11px;
+
+  width: 100%;
+  height: 100%;
+
+  background: #632cfc;
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #632cfc 0%,
+    #492727 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, #632cfc),
+    color-stop(100%, #492727)
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #2fd6f3 0%,
+    #492727 100%
+  );
+  background: radial-gradient(center, ellipse cover, #2fd6f3 0%, #492727 100%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+body {
+  perspective: 3000px;
+  perspective-origin: 0 20%;
+}
+
+.tree {
+  margin: 0 auto;
+  position: relative;
+  animation: spin 18s infinite linear;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+
+.tree * {
+  position: absolute;
+  transform-origin: 0 0;
+}
